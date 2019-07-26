@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context=".classtimings.view.ClassTimingsFragment">
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:visibility="invisible"
+        android:indeterminate="true"
+        android:layout_marginTop="-5dp"
+        android:max="100"
+        />
+
+    <com.android.chalkboard.util.TimeTable.TimeTable
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/timetable"
+       custom:setHeaderWidth="200"
+        custom:setHeaderHeight="100"
+        custom:setFirstColumnWidth="150"
+        custom:setFirstColumnHeight="150"
+        custom:setDataCellWidth="200"
+        custom:setDataCellHeight="150"
+        custom:setHeaderTextColor="@color/light_gray"
+        custom:setDataCellTextColor="@color/colorAccent"
+        custom:setTodayColumnColor="@color/light_salmon"
+        custom:setDataCellBackgroundColor="@color/light_pink"
+       />
+</RelativeLayout>

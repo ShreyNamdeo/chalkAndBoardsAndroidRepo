@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_below="@id/tv_welcome"
+    android:layout_marginTop="@dimen/margin_20dp"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_email_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/registration_margin_top">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_email_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_number_hint_text"
+            android:maxLines="1" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_select_role"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/til_email_phone_number"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/registration_margin_top">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_select_role"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/select_role_hint_text"
+            android:maxLines="1" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <com.android.chalkboard.util.PNButton
+        android:id="@+id/btn_login"
+        style="@style/WIDE_BUTTON"
+        app:isPositive="true"
+        android:layout_width="match_parent"
+        android:layout_below="@id/tv_forgot_password"
+        android:layout_marginLeft="@dimen/v40dp"
+        android:layout_marginRight="@dimen/v40dp"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:text="@string/login_btn" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_dont_have_accnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/don_t_have_an_account" />
+
+        <TextView
+            android:id="@+id/tv_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_dont_have_accnt"
+            android:paddingLeft="4dp"
+            android:text="@string/sign_up"
+            android:textColor="@color/appGreenColor" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".school.view.AddFeesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/add_fees_close_padding"
+            android:src="@drawable/ic_close_black_24dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:id="@+id/fees_key_value_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"            >
+            <include layout="@layout/add_fee_item"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/add_fees_add_submit_margin_bottom"
+            >
+            <com.android.chalkboard.util.PNButton
+                android:id="@+id/pnb_add_standard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/add_fees_add_submit_margin_bottom"
+                android:text="@string/add_fee_button"
+                style="@style/WIDE_BUTTON"
+                app:isPositive="true"
+                android:layout_weight="1"
+                />
+            <com.android.chalkboard.util.PNButton
+                android:id="@+id/pnb_submit_fee"
+                style="@style/WIDE_BUTTON"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/add_fees_add_submit_margin_bottom"
+                android:text="@string/submit_fee_button"
+                android:layout_weight="1"
+                app:isPositive="true" />
+
+        </LinearLayout>
+
+</LinearLayout>

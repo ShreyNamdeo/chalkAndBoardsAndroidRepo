@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".studentStory.attendance.elaboratedAttendance">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/present_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5dp"
+            android:text="Present Percentage: "
+            android:textSize="@dimen/v25sp" />
+
+        <TextView
+            android:id="@+id/present_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5dp"
+            android:text="87%"
+            android:textStyle="bold"
+            android:textSize="@dimen/v25sp"
+            android:textColor="@color/themeGreen"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/presentProgress"
+        style="@style/CustomProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v8dp"
+        android:layout_below="@id/present_layout"
+        android:backgroundTint="@color/appGreenColor"
+        android:progress="87"
+        android:layout_marginLeft="@dimen/margin_5dp"
+        android:layout_marginRight="@dimen/margin_5dp"/>
+
+    <ListView
+        android:id="@+id/elaboratedList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:layout_below="@id/presentProgress"
+        android:divider="@android:color/transparent"/>
+
+
+</RelativeLayout>

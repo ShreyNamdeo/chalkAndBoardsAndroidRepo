@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".teacherStory.classes.ClassActivity">
+
+
+    <ImageView
+        android:id="@+id/header_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v150dp"
+        android:background="@color/appGreenColor"
+        android:padding="@dimen/margin_10dp"
+        android:src="@drawable/header_vector_test" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/submitlayout"
+        android:layout_below="@id/header_img">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header_img"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Title: "
+                    android:textColor="@color/flatBlack"
+                    android:textSize="@dimen/v20sp" />
+
+                <TextView
+                    android:id="@+id/testTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11th Physics"
+                    android:textSize="@dimen/v25sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:background="@color/light_gray" />
+
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/image_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/v180dp"
+                android:layout_margin="@dimen/margin_10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/schoolLogo"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description: "
+                    android:textColor="@color/flatBlack"
+                    android:textSize="@dimen/v20sp" />
+
+                <TextView
+                    android:id="@+id/testDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="4"
+                    android:text="11th Physics"
+                    android:textSize="@dimen/v18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:background="@color/light_gray" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Marks: "
+                    android:textColor="@color/flatBlack"
+                    android:textSize="@dimen/v20sp" />
+
+                <TextView
+                    android:id="@+id/test_totalMarks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textSize="@dimen/v20sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No. of attempts allowed: "
+                    android:textColor="@color/flatBlack"
+                    android:textSize="@dimen/v20sp" />
+
+                <TextView
+                    android:id="@+id/test_attempts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="@dimen/v20sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Test Date: "
+                    android:textColor="@color/flatBlack"
+                    android:textSize="@dimen/v20sp" />
+
+                <TextView
+                    android:id="@+id/testDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24/09/19"
+                    android:textSize="@dimen/v20sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/submitlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_5dp">
+
+        <Button
+            android:id="@+id/submitAssign"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/v50dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundcorner_rectangle"
+            android:backgroundTint="@color/flatOrange"
+            android:text="SUBMIT"
+            android:textColor="@color/titleTextColor"
+            android:textSize="@dimen/v25sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/replyAssign"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/v50dp"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundcorner_rectangle"
+            android:backgroundTint="@color/appGreenColor"
+            android:text="UPLOAD"
+            android:textColor="@color/titleTextColor"
+            android:textSize="@dimen/v25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

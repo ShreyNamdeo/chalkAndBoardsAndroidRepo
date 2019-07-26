@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:visibility="invisible"
+        android:indeterminate="true"
+        android:layout_marginTop="-5dp"
+        android:max="100"
+        android:layout_alignParentStart="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Class News"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textColor="@color/appGreenColor"
+            android:textStyle="bold"
+            android:background="#00000000"
+            android:id="@+id/titleBarText"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/classNewsPic"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="No image available. Click here to add new."
+                android:id="@+id/emptyMessage"
+                android:textAlignment="center"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColorHint="@color/colorAccent"
+                android:layout_weight="1"
+                android:id="@+id/classNameView"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class"
+                    android:backgroundTint="#00000000"
+                    android:layout_alignParentStart="true"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/classDropDown"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColorHint="@color/colorAccent"
+                android:layout_weight="1"
+                android:id="@+id/newsIdView">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="News Id"
+                    android:backgroundTint="#00000000"
+                    android:layout_alignParentStart="true"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="News Id:"
+                    android:id="@+id/reqId"
+                    android:enabled="false"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColorHint="@color/colorAccent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:backgroundTint="#00000000"
+                    android:layout_alignParentStart="true"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Title:"
+                    android:id="@+id/title"
+                    android:enabled="false"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColorHint="@color/colorAccent"
+                android:layout_weight="0.8">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Content"
+                    android:backgroundTint="#00000000"
+                    android:layout_alignParentStart="true"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Content:"
+                    android:id="@+id/content"
+                    android:enabled="false"
+                    android:maxLines="5"
+                    android:lines="5"
+                    android:lineHeight="10dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColorHint="@color/colorAccent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:backgroundTint="#00000000"
+                    android:layout_alignParentStart="true"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Date:"
+                    android:id="@+id/date" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColorHint="@color/colorAccent"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Topic"
+                    android:backgroundTint="#00000000"
+                    android:layout_alignParentStart="true"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Topic:"
+                    android:id="@+id/topic"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10dp"
+                android:layout_height="match_parent">
+
+                <com.android.chalkboard.util.PNButton
+                    android:id="@+id/edit"
+                    android:text="@string/edit_text"
+                    app:isPositive="true"
+                    style="@style/PN_STYLE"
+                    android:layout_weight="1"
+                    />
+                <com.android.chalkboard.util.PNButton
+                    android:id="@+id/cancelNews"
+                    android:text="Cancel"
+                    app:isPositive="false"
+                    style="@style/PN_STYLE"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

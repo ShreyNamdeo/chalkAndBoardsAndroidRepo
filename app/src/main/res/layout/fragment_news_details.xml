@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".studentStory.news.newsDetails">
+
+    <RelativeLayout
+        android:id="@+id/header_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v180dp">
+
+        <ImageView
+            android:id="@+id/news_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/v180dp"
+            android:src="@drawable/news" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/v180dp"
+            android:alpha="0.2"
+            android:background="@color/appWhite" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_img">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10dp">
+
+            <TextView
+                android:id="@+id/news_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="News Title"
+                android:textColor="@color/flatBlack"
+                android:textSize="@dimen/v25sp"
+                android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/news_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="04/04/19"
+                    android:textSize="@dimen/v15sp"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/news_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5dp"
+                android:text="akjdfnldknfjwenjlfnldlflflflfld"
+                android:textSize="@dimen/v20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

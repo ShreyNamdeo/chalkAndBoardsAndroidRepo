@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_5dp"
+        app:cardCornerRadius="@dimen/margin_5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/itemImage"
+                android:layout_width="@dimen/v60dp"
+                android:layout_height="@dimen/v60dp"
+                android:layout_margin="@dimen/margin_5dp"
+                android:layout_weight="0.5"
+                android:src="@drawable/class_icon" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/itemTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="Physics Class"
+                    android:textColor="@color/flatBlack"
+                    android:textSize="@dimen/v20sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/attendance_image"
+                android:layout_width="@dimen/v50dp"
+                android:layout_height="@dimen/v50dp"
+                android:src="@drawable/present"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

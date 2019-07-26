@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".dashboard.view.DashboardFragment"
+    android:id="@+id/main_view">
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:visibility="invisible"
+        android:indeterminate="true"
+        android:layout_marginTop="-5dp"
+        android:max="100"
+        />
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_dashboard"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rl_header_container"
+        android:background="@color/header_content_bg"
+        android:paddingTop="@dimen/margin_12dp"
+        android:paddingBottom="@dimen/margin_12dp"
+        android:paddingLeft="@dimen/v30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title1"
+            style="@style/T2"
+            tools:text="Online school fee payment"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_title2"
+            android:layout_below="@id/tv_title1"
+            android:layout_marginTop="@dimen/margin_4dp"
+            android:layout_marginRight="150dp"
+            tools:text="Enable school fee payment, to receive fee online from parents"
+            style="@style/T3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_button"
+            android:layout_below="@id/tv_title2"
+            android:layout_marginTop="@dimen/margin_4dp"
+            android:layout_marginRight="150dp"
+            tools:text="ENABLE NOW"
+            style="@style/T3"
+            android:textColor="@color/appGreenColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/iv_rupee_ic"
+            android:layout_marginRight="@dimen/v15dp"
+            android:src="@drawable/ic_menu_gallery"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_dashboard_items"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/cv_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/app_margin_left_right"
+        android:layout_marginRight="@dimen/app_margin_left_right">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+</RelativeLayout>

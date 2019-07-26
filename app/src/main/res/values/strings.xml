@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">ChalkAndBoard</string>
+    <string name="registration_title">Chalk &amp; Boards</string>
+
+    <!--registration-->
+    <string name="tool_text_signup_title">Sign Up for %1$s</string>
+    <string name="full_name_hint_text">Full Name</string>
+    <string name="email_hint_text">Email Address*</string>
+    <string name="password_hint_text">Set a Password*</string>
+    <string name="mobile_hint_text">Mobile Number*</string>
+    <string name="dob_hint_text">Date of Birth</string>
+    <string name="get_started_btn">Get Started</string>
+    <string name="invalid_email_error">Invalid Email</string>
+    <string name="invalid_mobile_number">Invalid Mobile Number</string>
+    <string name="invalid_password">Password must be atleast 8 chars long and contain atleast one Capital letter, one number and a special character</string>
+    <string name="user_already_present_error">User Already present in system with this role</string>
+
+    <!-- Login -->
+    <string name="welcome_text">Welcome to Chalk &amp; Boards</string>
+    <string name="email_number_hint_text">Mobile number or Email Id</string>
+    <string name="select_role_hint_text">Select Role</string>
+
+    <string name="password_otp_hint_text">Password or OTP</string>
+    <string name="login_btn">Login</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="or">OR</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_nav_dash_board">NavDashBoardActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="select_a_role">Please select a role</string>
+    <string name="verify_otp">Submit OTP</string>
+
+    <!-- dashboard -->
+    <string name="dashboard_title">Home</string>
+    <string name="enter_correct_email_number">Please enter correct email or phone no</string>
+    <string name="otp_sent">OTP has been sent to registered email Id and phone no</string>
+
+    <!--school admin-->
+    <string name="accept_text">Accept</string>
+    <string name="reject_text">Reject</string>
+    <string name="edit_text">Edit</string>
+    <string name="delete_text">Delete</string>
+    <string name="school_text">school</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="name_hint_text">Name</string>
+    <string name="principle_name_hint_text">Principle Name</string>
+    <string name="address_hint_text">Address</string>
+    <string name="location_hint_text">Location</string>
+    <string name="specialization_hint_text">Specialization</string>
+    <string name="affiliation_hint_text">Affiliation</string>
+    <string name="reg_no_hint_text">Registration No</string>
+    <string name="type_hint_text">Type</string>
+    <string name="fees_hint_text">Fees</string>
+    <string name="spinner_prompt_text">Type</string>
+    <string name="picture_logo_hint_text">Picture of logo</string>
+    <string name="standard_hint_text">Standard</string>
+    <string name="standard_fees_hint_text">Fees</string>
+    <string name="school_list_empty_message">Please add school</string>
+    <string-array name="spinner_type">
+        <item>Type</item>
+        <item>Standard</item>
+        <item>Autonomous</item>
+    </string-array>
+    <string name="add_school_text">Add School</string>
+    <string name="add_fee_button">Add</string>
+    <string name="submit_fee_button">Submit</string>
+    <!-- teachers request -->
+    <string name="chalk_and_board_title">Chalk And Board</string>
+    <string name="txt_teachers_request">Teacher request</string>
+    <string name="title_activity_school_edit_view">SchoolEditViewActivity</string>
+    <string name="school_name_text_view">School Name : </string>
+    <string name="school_principle_name_text_view">Principle Name : </string>
+    <string name="school_information_title_text_view">School Information</string>
+    <string name="school_fees_title_text_view">Fees : </string>
+    <string name="school_address_title_text_view">Address</string>
+    <string name="school_city_title_text_view">City</string>
+    <string name="school_specialization_title_text_view">Specialization</string>
+    <string name="school_affiliation_title_text_view">Affiliation</string>
+    <string name="school_type_text_view">Type</string>
+    <string name="school_registration_no_title_text_view">Registration no</string>
+
+    <!-- Student request-->
+    <string name="student_request">student request</string>
+
+
+    <!--admin news-->
+    <string name="news_text">news</string>
+    <string name="school_news">School News</string>
+    <string name="class_news">Class News</string>
+    <string name="role_admin">Admin</string>
+    <string name="role_teacher">Teacher</string>
+    <string name="role_parent">Parent</string>
+    <string name="role_student">Student</string>
+    <string name="string_school">School</string>
+    <string name="string_teachers_request">Teacher request</string>
+    <string name="string_news">News</string>
+    <string name="no_institute_created">No institute or class created by you</string>
+    <string name="news_not_available">No news available, please create a news first</string>
+    <string name="permission_storage_rationale">Storage permission is needed to use this feature.</string>
+    <string name="classes">class</string>
+
+</resources>

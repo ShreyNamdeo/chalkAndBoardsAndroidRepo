@@ -1,0 +1,145 @@
+[
+  {
+    "id": 1,
+    "name": "Shrey",
+    "principalName": "chirag",
+    "address": "k1 maul park",
+    "city": "pune",
+    "specialization": "Any specialization",
+    "affiliation": "cbse",
+    "registrationNo": "23123AS123",
+    "fee": [
+      {
+        "standard 1": 100
+      },
+      {
+        "standard 2": 200
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Shrey",
+    "principalName": "chirag",
+    "address": "k1 maul park, city , state, pincode",
+    "city": "pune",
+    "specialization": "Any specialization",
+    "affiliation": "cbse",
+    "registrationNo": "23123AS123",
+    "fee": [
+      {
+        "standard 1": 100
+      },
+      {
+        "standard 2": 200
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Shrey",
+    "principalName": "chirag",
+    "address": "k1 maul park",
+    "city": "pune",
+    "specialization": "Any specialization",
+    "affiliation": "cbse",
+    "registrationNo": "23123AS123",
+    "fee": [
+      {
+        "standard 1": 100
+      },
+      {
+        "standard 2": 200
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Shrey",
+    "principalName": "chirag",
+    "address": "k1 maul park, city , state, pincode",
+    "city": "pune",
+    "specialization": "Any specialization",
+    "affiliation": "cbse",
+    "registrationNo": "23123AS123",
+    "fee": [
+      {
+        "standard 1": 100
+      },
+      {
+        "standard 2": 200
+      }
+    ]
+  },{
+  "id": 5,
+  "name": "Shrey",
+  "principalName": "chirag",
+  "address": "k1 maul park",
+  "city": "pune",
+  "specialization": "Any specialization",
+  "affiliation": "cbse",
+  "registrationNo": "23123AS123",
+  "fee": [
+    {
+      "standard 1": 100
+    },
+    {
+      "standard 2": 200
+    }
+  ]
+},
+  {
+    "id": 6,
+    "name": "Shrey",
+    "principalName": "chirag",
+    "address": "k1 maul park, city , state, pincode",
+    "city": "pune",
+    "specialization": "Any specialization",
+    "affiliation": "cbse",
+    "registrationNo": "23123AS123",
+    "fee": [
+      {
+        "standard 1": 100
+      },
+      {
+        "standard 2": 200
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Shrey",
+    "principalName": "chirag",
+    "address": "k1 maul park",
+    "city": "pune",
+    "specialization": "Any specialization",
+    "affiliation": "cbse",
+    "registrationNo": "23123AS123",
+    "fee": [
+      {
+        "standard 1": 100
+      },
+      {
+        "standard 2": 200
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Shrey",
+    "principalName": "chirag",
+    "address": "k1 maul park, city , state, pincode",
+    "city": "pune",
+    "specialization": "Any specialization",
+    "affiliation": "cbse",
+    "registrationNo": "23123AS123",
+    "fee": [
+      {
+        "standard 1": 100
+      },
+      {
+        "standard 2": 200
+      }
+    ]
+  }
+]

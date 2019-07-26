@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_view">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please enter the OTP/Password:"
+            android:textColor="@color/flatBlack"
+            android:textSize="@dimen/v18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_10dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/otp_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="textCapCharacters"
+                android:textColor="@color/appGreenColor" />
+
+            <EditText
+                android:id="@+id/otp_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="textCapCharacters"
+                android:textColor="@color/appGreenColor" />
+
+            <EditText
+                android:id="@+id/otp_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="textCapCharacters"
+                android:textColor="@color/appGreenColor" />
+
+            <EditText
+                android:id="@+id/otp_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="textCapCharacters"
+                android:textColor="@color/appGreenColor" />
+
+            <EditText
+                android:id="@+id/otp_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="textCapCharacters"
+                android:textColor="@color/appGreenColor" />
+
+            <EditText
+                android:id="@+id/otp_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="textCapCharacters"
+                android:textColor="@color/appGreenColor" />
+
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_password_otp"
+            android:layout_width="match_parent"
+            android:layout_below="@id/til_select_role"
+            android:layout_marginTop="@dimen/registration_margin_top"
+            app:passwordToggleEnabled="true"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_password_otp"
+                android:hint="@string/password_otp_hint_text"
+                android:layout_width="match_parent"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/otp_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textSize="@dimen/v15sp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_gravity="right"/>
+
+
+        <Button
+            android:id="@+id/submit_otp"
+            style="@style/WIDE_BUTTON"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:backgroundTint="@color/appGreenColor"
+            android:text="SUBMIT"
+            android:textColor="@color/titleTextColor" />
+
+
+        <TextView
+            android:id="@+id/tv_forgot_password"
+            android:text="Forgot Password?"
+            android:layout_below="@+id/role_layout"
+            android:textColor="@color/appGreenColor"
+            android:textSize="@dimen/forgot_password_text"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

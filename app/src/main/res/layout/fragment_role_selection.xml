@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:id="@+id/rl_admin_container"
+    android:layout_width="wrap_content"
+    android:padding="@dimen/margin_20dp"
+    android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_role_admin"
+            android:src="@drawable/role_admin"
+            android:layout_width="@dimen/role_icon_height_width"
+            android:layout_height="@dimen/role_icon_height_width" />
+        <TextView
+            android:id="@+id/tv_admin_label"
+            android:layout_below="@+id/iv_role_admin"
+            android:text="@string/role_admin"
+            style="@style/LargeHeading"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+</RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_teacher_container"
+            android:layout_toRightOf="@id/rl_admin_container"
+            android:padding="@dimen/margin_20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_role_teacher"
+            android:src="@drawable/role_teacher"
+            android:layout_width="@dimen/role_icon_height_width"
+            android:layout_height="@dimen/role_icon_height_width" />
+            <TextView
+                android:id="@+id/tv_teacher_label"
+                android:layout_below="@+id/iv_role_teacher"
+                android:text="@string/role_teacher"
+                style="@style/LargeHeading"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_parent_container"
+            android:padding="@dimen/margin_20dp"
+            android:layout_below="@id/rl_teacher_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_role_parent"
+            android:src="@drawable/role_parents"
+            android:layout_width="@dimen/role_icon_height_width"
+            android:layout_height="@dimen/role_icon_height_width" />
+
+            <TextView
+                android:id="@+id/tv_parent_label"
+                android:layout_below="@+id/iv_role_parent"
+                android:text="@string/role_parent"
+                style="@style/LargeHeading"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_student_container"
+            android:padding="@dimen/margin_20dp"
+            android:layout_toRightOf="@id/rl_parent_container"
+            android:layout_below="@id/rl_teacher_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_role_student"
+
+            android:src="@drawable/role_student"
+            android:layout_width="@dimen/role_icon_height_width"
+            android:layout_height="@dimen/role_icon_height_width" />
+            <TextView
+                android:id="@+id/tv_student_label"
+                android:layout_below="@+id/iv_role_student"
+                android:text="@string/role_student"
+                style="@style/LargeHeading"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

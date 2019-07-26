@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_dashboard_item_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <android.support.v7.widget.CardView
+        app:cardUseCompatPadding="true"
+        android:layout_width="@dimen/v120dp"
+        android:adjustViewBounds="true"
+        android:layout_centerInParent="true"
+        android:layout_height="@dimen/v120dp">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="@dimen/v50dp"
+            android:layout_height="@dimen/v50dp"
+            android:layout_gravity="center"
+            android:drawableTint="@color/appGreenColor"
+            />
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            tools:text="Schools"
+            android:textSize="@dimen/v15sp"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="4dp"
+            android:paddingLeft="@dimen/v2dp"
+            android:paddingRight="@dimen/v2dp"
+            android:paddingBottom="@dimen/margin_5dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:drawableTint="@color/appGreenColor"
+            android:textColor="@color/flatBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

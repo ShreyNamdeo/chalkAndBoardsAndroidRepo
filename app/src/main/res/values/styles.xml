@@ -1,0 +1,92 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/DrawerIcon</item>
+    </style>
+
+    <style name="NoActionBarCustom" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="drawerArrowStyle">@style/DrawerIcon</item>
+    </style>
+
+    <style name="HeaderBar">
+        <item name="android:background">#098010</item>
+    </style>
+
+    <style name="T1">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">"sans-serif-medium"</item>
+    </style>
+
+    <style name="T2">
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">"sans-serif-medium"</item>
+    </style>
+
+    <style name="T3">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="T3GREEN">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/appGreenColor</item>
+
+    </style>
+    <style name="T1GREEN">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/appGreenColor</item>
+
+    </style>
+
+    <style name="WIDE_BUTTON">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">"sans-serif-medium"</item>
+
+    </style>
+
+    <style name="ErrorText" parent="TextAppearance.Design.Error">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/errorColor</item>
+    </style>
+
+    <style name="LargeHeading">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/appGreenColor</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="SchoolItemTitle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/appGreenColor</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="DrawerIcon" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/appGreenColor</item>
+    </style>
+
+    <style name="PN_STYLE">
+        <item name="android:textSize">9sp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_width">30dp</item>
+    </style>
+
+    <style name="CustomProgressBar" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progress_drawable</item>
+        <item name="android:minHeight">10dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+</resources>

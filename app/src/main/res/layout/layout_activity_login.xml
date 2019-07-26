@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitEnd"
+        android:src="@drawable/signup_vector" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:indeterminate="true"
+        android:max="100"
+        android:visibility="invisible" />
+
+
+    <ImageView
+        android:id="@+id/picIcon"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="@dimen/margin_20dp"
+        app:srcCompat="@drawable/logo" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/loginViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_welcome"
+
+        android:layout_marginTop="@dimen/margin_5dp" />
+
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        style="@style/LargeHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/picIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/registration_margin_top"
+        android:text="@string/welcome_text"
+        android:textColor="@color/appGreenColor" />
+
+
+    <FrameLayout
+        android:id="@+id/container_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_5dp" />
+
+
+</RelativeLayout>

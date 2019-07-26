@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="join"/>
+    <item type="id" name="view"/>
+    <item type="id" name="searchView"/>
+    <item type="id" name="search"/>
+    <item type="id" name="tableA"/>
+    <item type="id" name="horizontalScrollViewB"/>
+    <item type="id" name="scrollViewC"/>
+    <item type="id" name="scrollViewD"/>
+</resources>

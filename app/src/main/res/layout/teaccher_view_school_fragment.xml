@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/schoolIcon"
+        android:layout_weight="1"
+        android:src="@drawable/school_list_icon"
+        android:padding="@dimen/margin_10dp"/>
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.5"
+        android:padding="@dimen/margin_10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="School Name:"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SCHOOL NAME"
+                android:id="@+id/schoolNameText"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Principle Name:"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="PRINCIPLE NAME"
+                android:id="@+id/schoolPrincipleNameText"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="School Address:"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ADDRESS"
+                android:id="@+id/schoolAddressText"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="City:"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="City"
+                android:id="@+id/schoolCityText"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Specialization:"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="City"
+                android:id="@+id/schoolSpecializationText"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Afiliation:"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="City"
+                android:id="@+id/schoolAffiliationText"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Registration No.:"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="City"
+                android:id="@+id/schoolRegistrationText"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1.3">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/cancel"
+            android:text="Cancel"
+            android:background="@android:color/darker_gray"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/join"
+            android:text="Join"
+            android:background="@android:color/darker_gray"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".school.view.SchoolEditViewActivity"
+    tools:showIn="@layout/activity_school_edit_view">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="@dimen/school_edit_activity_margin"
+       android:orientation="vertical">
+       <ProgressBar
+           style="?android:attr/progressBarStyleHorizontal"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/progress"
+           android:visibility="invisible"
+           android:indeterminate="true"
+           android:layout_marginTop="-5dp"
+           android:max="100"
+           />
+       <TextView
+           android:id="@+id/school_info_title_tv"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           style="@style/SchoolItemTitle"
+           android:text="@string/school_information_title_text_view"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:weightSum="5"
+           android:layout_marginTop="@dimen/school_edit_activity_item_top_margin"
+           android:orientation="horizontal">
+
+            <TextView
+               android:id="@+id/school_name_label_tv"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="@string/school_name_text_view"
+                android:gravity="center|left"
+               android:textSize="16sp" />
+           <TextView
+               android:id="@+id/school_name_value_tv"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:textSize="16sp"
+               android:layout_weight="3"
+               android:visibility="visible"
+               android:textColor="@android:color/black"
+               android:text="@string/school_name_text_view"/>
+
+           <android.support.design.widget.TextInputLayout
+               android:id="@+id/til_school_name"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="0dp"
+               android:layout_marginLeft="0dp"
+               android:layout_marginTop="0dp"
+               android:layout_weight="3"
+               android:visibility="gone"
+               >
+               <android.support.design.widget.TextInputEditText
+                   android:id="@+id/et_school_name"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/name_hint_text" />
+           </android.support.design.widget.TextInputLayout>
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:weightSum="5"
+           android:layout_marginTop="@dimen/school_edit_activity_item_top_margin"
+           android:orientation="horizontal">
+
+           <TextView
+               android:id="@+id/school_principle_name_label_tv"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="2"
+               android:text="@string/school_principle_name_text_view"
+               android:gravity="center|left"
+               android:textSize="16sp" />
+           <TextView
+               android:id="@+id/school_principle_name_value_tv"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:textSize="16sp"
+               android:layout_weight="3"
+               android:visibility="visible"
+               android:textColor="@android:color/black"
+               android:text="@string/school_name_text_view"/>
+
+           <android.support.design.widget.TextInputLayout
+               android:id="@+id/til_principle_name"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="0dp"
+               android:layout_marginLeft="0dp"
+               android:layout_marginTop="0dp"
+               android:layout_weight="3"
+               android:visibility="gone"
+               >
+               <android.support.design.widget.TextInputEditText
+                   android:id="@+id/et_principle_name"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/principle_name_hint_text" />
+           </android.support.design.widget.TextInputLayout>
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:weightSum="5"
+           android:layout_marginTop="@dimen/school_edit_activity_item_top_margin"
+           android:orientation="horizontal">
+
+           <TextView
+               android:id="@+id/school_address_label_tv"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="2"
+               android:text="@string/school_address_title_text_view"
+               android:gravity="center|left"
+               android:textSize="16sp" />
+           <TextView
+               android:id="@+id/school_address_value_tv"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:textSize="16sp"
+               android:layout_weight="3"
+               android:visibility="visible"
+               android:textColor="@android:color/black"
+               android:text="@string/school_name_text_view"/>
+
+           <android.support.design.widget.TextInputLayout
+               android:id="@+id/til_school_address"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="0dp"
+               android:layout_marginLeft="0dp"
+               android:layout_marginTop="0dp"
+               android:layout_weight="3"
+               android:visibility="gone"
+               >
+               <android.support.design.widget.TextInputEditText
+                   android:id="@+id/et_school_address"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/address_hint_text" />
+           </android.support.design.widget.TextInputLayout>
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:weightSum="5"
+           android:layout_marginTop="@dimen/school_edit_activity_item_top_margin"
+           android:orientation="horizontal">
+
+           <TextView
+               android:id="@+id/school_city_label_tv"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="2"
+               android:text="@string/school_city_title_text_view"
+               android:gravity="center|left"
+               android:textSize="16sp" />
+           <TextView
+               android:id="@+id/school_city_value_tv"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:textSize="16sp"
+               android:layout_weight="3"
+               android:visibility="visible"
+               android:textColor="@android:color/black"
+               android:text="@string/school_name_text_view"/>
+
+           <android.support.design.widget.TextInputLayout
+               android:id="@+id/til_school_city"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="0dp"
+               android:layout_marginLeft="0dp"
+               android:layout_marginTop="0dp"
+               android:layout_weight="3"
+               android:visibility="gone"
+               >
+               <android.support.design.widget.TextInputEditText
+                   android:id="@+id/et_school_city"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/location_hint_text" />
+           </android.support.design.widget.TextInputLayout>
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:weightSum="5"
+           android:layout_marginTop="@dimen/school_edit_activity_item_top_margin"
+           android:orientation="horizontal">
+
+           <TextView
+               android:id="@+id/school_specialization_label_tv"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="2"
+               android:text="@string/school_specialization_title_text_view"
+               android:gravity="center|left"
+               android:textSize="16sp" />
+           <TextView
+               android:id="@+id/school_specialization_value_tv"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:textSize="16sp"
+               android:layout_weight="3"
+               android:visibility="visible"
+               android:textColor="@android:color/black"
+               android:text="@string/school_name_text_view"/>
+
+           <android.support.design.widget.TextInputLayout
+               android:id="@+id/til_school_specialization"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="0dp"
+               android:layout_marginLeft="0dp"
+               android:layout_marginTop="0dp"
+               android:layout_weight="3"
+               android:visibility="gone"
+               >
+               <android.support.design.widget.TextInputEditText
+                   android:id="@+id/et_school_specialization"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/specialization_hint_text" />
+           </android.support.design.widget.TextInputLayout>
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:weightSum="5"
+           android:layout_marginTop="@dimen/school_edit_activity_item_top_margin"
+           android:orientation="horizontal">
+
+           <TextView
+               android:id="@+id/school_affiliation_label_tv"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="2"
+               android:text="@string/school_affiliation_title_text_view"
+               android:gravity="center|left"
+               android:textSize="16sp" />
+           <TextView
+               android:id="@+id/school_affiliation_value_tv"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:textSize="16sp"
+               android:layout_weight="3"
+               android:visibility="visible"
+               android:textColor="@android:color/black"
+               android:text="@string/school_name_text_view"/>
+
+           <android.support.design.widget.TextInputLayout
+               android:id="@+id/til_affiliation_name"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="0dp"
+               android:layout_marginLeft="0dp"
+               android:layout_marginTop="0dp"
+               android:layout_weight="3"
+               android:visibility="gone"
+               >
+               <android.support.design.widget.TextInputEditText
+                   android:id="@+id/et_affiliation_name"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/affiliation_hint_text" />
+           </android.support.design.widget.TextInputLayout>
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:weightSum="5"
+           android:layout_marginTop="@dimen/school_edit_activity_item_top_margin"
+           android:orientation="horizontal">
+
+           <TextView
+               android:id="@+id/school_type_label_tv"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="2"
+               android:gravity="center|left"
+               android:paddingBottom="10dp"
+               android:text="@string/school_type_text_view"
+               android:textSize="@dimen/school_edit_activity_text_size"/>
+       <TextView
+           android:id="@+id/school_type_value_tv"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:textSize="@dimen/school_edit_activity_text_size"
+           android:visibility="visible"
+           android:layout_weight="3"
+           android:textColor="@android:color/black"
+           android:text="@string/school_name_text_view"/>
+
+       <android.support.design.widget.TextInputLayout
+           android:id="@+id/til_type"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="0dp"
+           android:layout_marginLeft="0dp"
+           android:layout_marginTop="0dp"
+           android:layout_weight="3"
+           android:visibility="gone"
+           >
+
+           <android.support.design.widget.TextInputEditText
+               android:id="@+id/et_type"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="none"
+               android:hint="@string/type_hint_text" />
+       </android.support.design.widget.TextInputLayout>
+
+
+   </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:weightSum="5"
+           android:layout_marginTop="@dimen/school_edit_activity_item_top_margin"
+           android:orientation="horizontal">
+
+           <TextView
+               android:id="@+id/school_reg_no_label_tv"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="2"
+               android:text="@string/school_registration_no_title_text_view"
+               android:gravity="center|left"
+               android:textSize="16sp" />
+           <TextView
+               android:id="@+id/school_reg_no_value_tv"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:textSize="16sp"
+               android:layout_weight="3"
+               android:visibility="visible"
+               android:textColor="@android:color/black"
+               android:text="@string/school_name_text_view"/>
+
+           <android.support.design.widget.TextInputLayout
+               android:id="@+id/til_reg_no"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="0dp"
+               android:layout_marginLeft="0dp"
+               android:layout_marginTop="0dp"
+               android:layout_weight="3"
+               android:visibility="gone"
+               >
+               <android.support.design.widget.TextInputEditText
+                   android:id="@+id/et_reg_no"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/reg_no_hint_text" />
+           </android.support.design.widget.TextInputLayout>
+
+
+       </LinearLayout>
+
+
+       <TextView
+           android:id="@+id/school_fees_title_tv"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:layout_marginTop="@dimen/school_edit_activity_item_top_margin"
+           style="@style/SchoolItemTitle"
+           android:text="@string/school_fees_title_text_view"/>
+       <LinearLayout
+           android:id="@+id/fees_text_view_ll"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:weightSum="5"
+           android:layout_marginTop="@dimen/school_edit_activity_item_top_margin"
+           android:visibility="visible"
+           android:orientation="vertical">
+           <!--<include layout="@layout/fees_information_view"/>-->
+
+       </LinearLayout>
+       <LinearLayout
+           android:id="@+id/fees_edit_view_ll"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:weightSum="5"
+           android:layout_marginTop="@dimen/school_edit_activity_item_top_margin"
+           android:visibility="visible"
+           android:orientation="vertical">
+       </LinearLayout>
+
+       <com.android.chalkboard.util.PNButton
+           android:id="@+id/pnb_submit_fee"
+           style="@style/WIDE_BUTTON"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="@dimen/add_fees_add_submit_margin_bottom"
+           android:text="@string/submit_fee_button"
+           android:layout_weight="1"
+           android:visibility="gone"
+           app:isPositive="true" />
+
+
+   </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard.view.NavDashBoardActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v60dp"
+        android:background="@color/appWhite"
+        android:elevation="@dimen/margin_5dp">
+
+
+        <ImageView
+            android:id="@+id/toolbar_back"
+            android:layout_width="@dimen/v40dp"
+            android:layout_height="@dimen/v40dp"
+            android:src="@drawable/toolbar_back"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/margin_5dp"
+            android:layout_marginLeft="@dimen/margin_20dp"/>
+
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="School"
+            android:textColor="@color/flatBlack"
+            android:textSize="@dimen/v25sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/toolbar_back"
+            android:layout_marginLeft="@dimen/v15dp"/>
+
+
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/include_toolbar"
+        layout="@layout/content_collapsing" />
+
+    <FrameLayout
+        android:id="@+id/fragment_content_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+</android.support.design.widget.CoordinatorLayout>
+

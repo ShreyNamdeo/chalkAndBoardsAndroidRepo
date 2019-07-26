@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    tools:context=".studentStory.profile.profileFragment">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_5dp"
+        app:cardCornerRadius="@dimen/margin_5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/edit_profile"
+                android:layout_width="@dimen/v60dp"
+                android:layout_height="@dimen/v60dp"
+                android:background="@drawable/circle"
+                android:backgroundTint="@color/themeGreen"
+                android:elevation="@dimen/margin_5dp"
+                android:src="@drawable/edit"
+                android:padding="@dimen/v15dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/margin_10dp"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="@dimen/v120dp"
+                        android:layout_height="@dimen/v120dp"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/margin_10dp"
+                        android:src="@drawable/student"
+                        app:civ_border_color="@color/themeGreen"
+                        app:civ_border_width="@dimen/v2dp" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_20dp">
+
+                        <TableRow
+                            android:layout_marginLeft="@dimen/margin_20dp"
+                            android:layout_marginTop="@dimen/margin_10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Student ID"
+                                android:textColor="@color/flatBlack"
+                                android:textSize="@dimen/v20sp" />
+
+
+                            <TextView
+                                android:id="@+id/profile_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/v40dp"
+                                android:text="----"
+                                android:textColor="@color/flatBlack"
+                                android:textSize="@dimen/v20sp"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_marginLeft="@dimen/margin_20dp"
+                            android:layout_marginTop="@dimen/margin_10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Name"
+                                android:textColor="@color/flatBlack"
+                                android:textSize="@dimen/v20sp" />
+
+
+                            <TextView
+                                android:id="@+id/profile_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/v40dp"
+                                android:text="----"
+                                android:textColor="@color/flatBlack"
+                                android:textSize="@dimen/v20sp"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_marginLeft="@dimen/margin_20dp"
+                            android:layout_marginTop="@dimen/margin_10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Standard"
+                                android:textColor="@color/flatBlack"
+                                android:textSize="@dimen/v20sp" />
+
+
+                            <TextView
+                                android:id="@+id/profile_standard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/v40dp"
+                                android:text="----"
+                                android:textColor="@color/flatBlack"
+                                android:textSize="@dimen/v20sp"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_marginLeft="@dimen/margin_20dp"
+                            android:layout_marginTop="@dimen/margin_10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Section"
+                                android:textColor="@color/flatBlack"
+                                android:textSize="@dimen/v20sp" />
+
+
+                            <TextView
+                                android:id="@+id/profile_section"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/v40dp"
+                                android:text="----"
+                                android:textColor="@color/flatBlack"
+                                android:textSize="@dimen/v20sp"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginLeft="@dimen/margin_20dp"
+                            android:layout_marginTop="@dimen/margin_10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="House"
+                                android:textColor="@color/flatBlack"
+                                android:textSize="@dimen/v20sp" />
+
+
+                            <TextView
+                                android:id="@+id/profile_house"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/v40dp"
+                                android:text="----"
+                                android:textColor="@color/flatBlack"
+                                android:textSize="@dimen/v20sp"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginLeft="@dimen/margin_20dp"
+                            android:layout_marginTop="@dimen/margin_10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Father"
+                                android:textColor="@color/flatBlack"
+                                android:textSize="@dimen/v20sp" />
+
+
+                            <TextView
+                                android:id="@+id/profile_father"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/v40dp"
+                                android:text="----"
+                                android:textColor="@color/flatBlack"
+                                android:textSize="@dimen/v20sp"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_marginLeft="@dimen/margin_20dp"
+                            android:layout_marginTop="@dimen/margin_10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mother"
+                                android:textColor="@color/flatBlack"
+                                android:textSize="@dimen/v20sp" />
+
+
+                            <TextView
+                                android:id="@+id/profile_mother"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/v40dp"
+                                android:text="----"
+                                android:textColor="@color/flatBlack"
+                                android:textSize="@dimen/v20sp"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginLeft="@dimen/margin_20dp"
+                            android:layout_marginTop="@dimen/margin_10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Guardian"
+                                android:textColor="@color/flatBlack"
+                                android:textSize="@dimen/v20sp" />
+
+
+                            <TextView
+                                android:id="@+id/profile_guardian"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/v40dp"
+                                android:text="----"
+                                android:textColor="@color/flatBlack"
+                                android:textSize="@dimen/v20sp"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+
+                    </TableLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_margin="@dimen/margin_20dp"
+                        android:background="@color/themeGreen" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_20dp">
+
+                        <TableLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TableRow
+                                android:layout_marginLeft="@dimen/margin_20dp"
+                                android:layout_marginTop="@dimen/margin_10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Height"
+                                    android:textSize="@dimen/v20sp" />
+
+
+                                <TextView
+                                    android:id="@+id/profile_height"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_20dp"
+                                    android:text="----"
+                                    android:textColor="@color/flatBlack"
+                                    android:textSize="@dimen/v20sp"
+                                    android:textStyle="bold" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_marginLeft="@dimen/margin_20dp"
+                                android:layout_marginTop="@dimen/margin_10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Weight"
+                                    android:textSize="@dimen/v20sp" />
+
+
+                                <TextView
+                                    android:id="@+id/profile_weight"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_20dp"
+                                    android:text="----"
+                                    android:textColor="@color/flatBlack"
+                                    android:textSize="@dimen/v20sp"
+                                    android:textStyle="bold" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_marginLeft="@dimen/margin_20dp"
+                                android:layout_marginTop="@dimen/margin_10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Waist"
+                                    android:textSize="@dimen/v20sp" />
+
+
+                                <TextView
+                                    android:id="@+id/profile_waist"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_20dp"
+                                    android:text="----"
+                                    android:textColor="@color/flatBlack"
+                                    android:textSize="@dimen/v20sp"
+                                    android:textStyle="bold" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_marginLeft="@dimen/margin_20dp"
+                                android:layout_marginTop="@dimen/margin_10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Trouser"
+                                    android:textSize="@dimen/v20sp" />
+
+
+                                <TextView
+                                    android:id="@+id/profile_tl"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_20dp"
+                                    android:text="----"
+                                    android:textColor="@color/flatBlack"
+                                    android:textSize="@dimen/v20sp"
+                                    android:textStyle="bold" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_marginLeft="@dimen/margin_20dp"
+                                android:layout_marginTop="@dimen/margin_10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Shoulder"
+                                    android:textSize="@dimen/v20sp" />
+
+
+                                <TextView
+                                    android:id="@+id/profile_shoulder"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_20dp"
+                                    android:text="----"
+                                    android:textColor="@color/flatBlack"
+                                    android:textSize="@dimen/v20sp"
+                                    android:textStyle="bold" />
+
+                            </TableRow>
+
+
+                            <TableRow
+                                android:layout_marginLeft="@dimen/margin_20dp"
+                                android:layout_marginTop="@dimen/margin_10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Chest"
+                                    android:textSize="@dimen/v20sp" />
+
+
+                                <TextView
+                                    android:id="@+id/profile_chest"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_20dp"
+                                    android:text="----"
+                                    android:textColor="@color/flatBlack"
+                                    android:textSize="@dimen/v20sp"
+                                    android:textStyle="bold" />
+
+                            </TableRow>
+
+
+                        </TableLayout>
+
+                        <ImageView
+                            android:layout_width="@dimen/v150dp"
+                            android:layout_height="@dimen/v150dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/height" />
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/education_history"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

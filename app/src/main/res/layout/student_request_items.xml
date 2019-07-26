@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/student_request_container">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="0.5">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/avatar_img"
+            android:layout_weight="1"
+            android:id="@+id/studentPic"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/studentName"
+                android:text="Student Name"
+                android:textSize="20sp"
+                android:textColor="@color/appGreenColor"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/schoolName"
+                android:text="School Name"
+                android:textSize="20sp"
+                android:textColor="@color/appGreenColor"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <com.android.chalkboard.util.PNButton
+                android:id="@+id/accept"
+                android:text="Accept"
+                app:isPositive="true"
+                style="@style/PN_STYLE"
+                android:layout_weight="0.9"
+                />
+            <com.android.chalkboard.util.PNButton
+                android:id="@+id/reject"
+                android:text="Reject"
+                app:isPositive="false"
+                style="@style/PN_STYLE"
+                android:layout_weight="0.9"
+                android:layout_marginLeft="@dimen/margin_20dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

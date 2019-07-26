@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_standard"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/add_school_item_margin"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_standard"
+            android:hint="@string/standard_hint_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_fees_value"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/add_school_item_margin"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        >
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_fees_value"
+            android:hint="@string/standard_fees_hint_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+</LinearLayout>

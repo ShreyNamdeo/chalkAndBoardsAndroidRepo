@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/appWhite">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/student_image"
+        android:layout_width="@dimen/v150dp"
+        android:layout_height="@dimen/v150dp"
+        android:src="@drawable/student"
+        app:civ_border_width="@dimen/v2dp"
+        app:civ_border_color="@color/themeGreen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/v50dp"/>
+
+    <TableLayout
+        android:id="@+id/student_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/student_image"
+        android:layout_marginTop="@dimen/margin_20dp">
+
+        <TableRow
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Name"
+                android:textSize="@dimen/v20sp"
+                android:textColor="@color/flatBlack"/>
+
+
+            <TextView
+                android:id="@+id/student_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/v20sp"
+                android:textStyle="bold"
+                android:textColor="@color/flatBlack"
+                android:text="-------"
+                android:layout_marginLeft="@dimen/v40dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Mobile"
+                android:textSize="@dimen/v20sp"
+                android:textColor="@color/flatBlack"/>
+
+
+            <TextView
+                android:id="@+id/student_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/v20sp"
+                android:textStyle="bold"
+                android:textColor="@color/flatBlack"
+                android:text="-------"
+                android:layout_marginLeft="@dimen/v40dp"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/my_ward"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/margin_20dp"
+        android:layout_height="@dimen/v50dp"
+        android:layout_weight="1"
+        android:background="@drawable/roundcorner_rectangle"
+        android:backgroundTint="@color/themeGreen"
+        android:text="Link to my ward"
+        android:textColor="@color/titleTextColor"
+        android:textSize="@dimen/v25sp"
+        android:textStyle="bold"
+        android:layout_below="@id/student_table"/>
+
+    <Button
+        android:id="@+id/rescan"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/margin_10dp"
+        android:layout_height="@dimen/v50dp"
+        android:layout_weight="1"
+        android:background="@drawable/roundcorner_rectangle"
+        android:backgroundTint="@color/flatOrange"
+        android:text="Rescan"
+        android:textColor="@color/titleTextColor"
+        android:textSize="@dimen/v25sp"
+        android:textStyle="bold"
+        android:layout_below="@id/my_ward"/>
+
+</RelativeLayout>

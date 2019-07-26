@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/schoolLogo"
+        android:layout_width="@dimen/v120dp"
+        android:layout_height="@dimen/v120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/v50dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="@dimen/margin_5dp"
+            android:src="@drawable/circle" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="@dimen/margin_5dp"
+            android:padding="@dimen/margin_10dp"
+            android:src="@drawable/logo" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/schoolLogo"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/schoolLogo"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class Name: "
+                android:textColor="@color/flatBlack"
+                android:textSize="@dimen/v20sp" />
+
+            <TextView
+                android:id="@+id/className"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11th Physics"
+                android:textSize="@dimen/v25sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:background="@color/light_gray" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/schoolLogo"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="School Name: "
+                android:textColor="@color/flatBlack"
+                android:textSize="@dimen/v20sp" />
+
+            <TextView
+                android:id="@+id/schoolName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11th Physics"
+                android:textSize="@dimen/v25sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:background="@color/light_gray" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:text="Class Timing: "
+                android:textColor="@color/flatBlack"
+                android:textSize="@dimen/v20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5dp">
+
+
+                <TextView
+                    android:id="@+id/start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Start Time"
+                    android:textSize="@dimen/v20sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="End Time"
+                    android:textSize="@dimen/v20sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:background="@color/light_gray" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/margin_5dp"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/v50dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundcorner_rectangle"
+                android:backgroundTint="@color/flatOrange"
+                android:text="CANCEL"
+                android:textColor="@color/titleTextColor"
+                android:textSize="@dimen/v25sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/join"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/v50dp"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundcorner_rectangle"
+                android:backgroundTint="@color/appGreenColor"
+                android:text="JOIN"
+                android:textColor="@color/titleTextColor"
+                android:textSize="@dimen/v25sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

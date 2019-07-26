@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/v180dp"
+                android:src="@drawable/header_vector"
+                android:background="@color/themeGreen"
+                android:layout_marginBottom="@dimen/margin_10dp"/>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TableRow
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_marginTop="@dimen/margin_10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textColor="@color/flatBlack"
+                        android:textSize="@dimen/v20sp" />
+
+
+                    <TextView
+                        android:id="@+id/profile_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/v40dp"
+                        android:text="---"
+                        android:textColor="@color/flatBlack"
+                        android:textSize="@dimen/v20sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_marginTop="@dimen/margin_10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission No."
+                        android:textColor="@color/flatBlack"
+                        android:textSize="@dimen/v20sp" />
+
+
+                    <TextView
+                        android:id="@+id/profile_admission"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/v40dp"
+                        android:text="---"
+                        android:textColor="@color/flatBlack"
+                        android:textSize="@dimen/v20sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_marginTop="@dimen/margin_10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="D.O.B"
+                        android:textColor="@color/flatBlack"
+                        android:textSize="@dimen/v20sp" />
+
+
+                    <TextView
+                        android:id="@+id/profile_dob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/v40dp"
+                        android:text="---"
+                        android:textColor="@color/flatBlack"
+                        android:textSize="@dimen/v20sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_marginTop="@dimen/margin_10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Standard"
+                        android:textColor="@color/flatBlack"
+                        android:textSize="@dimen/v20sp" />
+
+
+                    <TextView
+                        android:id="@+id/profile_standard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/v40dp"
+                        android:text="---"
+                        android:textColor="@color/flatBlack"
+                        android:textSize="@dimen/v20sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_marginTop="@dimen/margin_10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Section"
+                        android:textColor="@color/flatBlack"
+                        android:textSize="@dimen/v20sp" />
+
+
+                    <TextView
+                        android:id="@+id/profile_section"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/v40dp"
+                        android:text="---"
+                        android:textColor="@color/flatBlack"
+                        android:textSize="@dimen/v20sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_marginTop="@dimen/margin_10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="House"
+                        android:textColor="@color/flatBlack"
+                        android:textSize="@dimen/v20sp" />
+
+
+                    <TextView
+                        android:id="@+id/profile_house"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/v40dp"
+                        android:text="---"
+                        android:textColor="@color/flatBlack"
+                        android:textSize="@dimen/v20sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_marginTop="@dimen/margin_10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Father"
+                        android:textColor="@color/flatBlack"
+                        android:textSize="@dimen/v20sp" />
+
+
+                    <TextView
+                        android:id="@+id/profile_father"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/v40dp"
+                        android:text="---"
+                        android:textColor="@color/flatBlack"
+                        android:textSize="@dimen/v20sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_marginTop="@dimen/margin_10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mother"
+                        android:textColor="@color/flatBlack"
+                        android:textSize="@dimen/v20sp" />
+
+
+                    <TextView
+                        android:id="@+id/profile_mother"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/v40dp"
+                        android:text="---"
+                        android:textColor="@color/flatBlack"
+                        android:textSize="@dimen/v20sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_marginTop="@dimen/margin_10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Guardian"
+                        android:textColor="@color/flatBlack"
+                        android:textSize="@dimen/v20sp" />
+
+
+                    <TextView
+                        android:id="@+id/profile_guardian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/v40dp"
+                        android:text="---"
+                        android:textColor="@color/flatBlack"
+                        android:textSize="@dimen/v20sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10dp"
+                android:text="Attendance"
+                android:textColor="@color/themeGreen"
+                android:textSize="@dimen/v30sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:gravity="center">
+
+                <ProgressBar
+                    android:id="@+id/itemProgress"
+                    style="@style/CustomProgressBar"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/margin_10dp"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/appGreenColor"
+                    android:progress="50" />
+
+                <TextView
+                    android:id="@+id/att_percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5dp"
+                    android:text="50%"
+                    android:textColor="@color/flatBlack"
+                    android:textSize="@dimen/v20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10dp"
+                android:text="Marks"
+                android:textColor="@color/themeGreen"
+                android:textSize="@dimen/v30sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_marginTop="@dimen/margin_10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aggregate Total"
+                        android:textColor="@color/flatBlack"
+                        android:textSize="@dimen/v20sp" />
+
+
+                    <TextView
+                        android:id="@+id/total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/v40dp"
+                        android:text="---"
+                        android:textColor="@color/flatBlack"
+                        android:textSize="@dimen/v20sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_marginTop="@dimen/margin_10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aggregate Obtained"
+                        android:textColor="@color/flatBlack"
+                        android:textSize="@dimen/v20sp" />
+
+
+                    <TextView
+                        android:id="@+id/obtained"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/v40dp"
+                        android:text="---"
+                        android:textColor="@color/flatBlack"
+                        android:textSize="@dimen/v20sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_marginTop="@dimen/margin_10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aggregate Percentage"
+                        android:textColor="@color/flatBlack"
+                        android:textSize="@dimen/v20sp" />
+
+
+                    <TextView
+                        android:id="@+id/percentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/v40dp"
+                        android:text="---"
+                        android:textColor="@color/flatBlack"
+                        android:textSize="@dimen/v20sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <!--<TableRow-->
+                    <!--android:layout_marginLeft="@dimen/margin_20dp"-->
+                    <!--android:layout_marginTop="@dimen/margin_20dp"-->
+                    <!--android:gravity="center">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+
+                        <!--android:text="Grade"-->
+                        <!--android:textColor="@color/themeGreen"-->
+                        <!--android:textSize="@dimen/v30sp"-->
+                        <!--android:textStyle="bold" />-->
+
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/grades"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="@dimen/v40dp"-->
+                        <!--android:text="12345"-->
+                        <!--android:textColor="@color/flatBlack"-->
+                        <!--android:textSize="@dimen/v20sp"-->
+                        <!--android:textStyle="bold" />-->
+
+                <!--</TableRow>-->
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/result_sheet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result Sheet"
+                android:background="@drawable/roundcorner_rectangle"
+                android:backgroundTint="@color/themeGreen"
+                android:textColor="@color/appWhite"
+                android:textSize="@dimen/v25sp"
+                android:padding="@dimen/margin_10dp"
+                android:layout_margin="@dimen/margin_10dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

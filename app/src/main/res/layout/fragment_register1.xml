@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:gravity="center"
+        android:text="Chalk and board can help in every phase of education system. Choose a role to get started."
+        android:textColor="#000000"
+        android:padding="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/iconLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/adminLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_registration_background_white"
+            android:layout_marginLeft="@dimen/margin_5dp">
+
+            <ImageView
+                android:id="@+id/adminIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:src="@drawable/user_black_icon"
+                android:gravity="center"
+                android:contentDescription="Admin"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/adminText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Admin"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/light_gray"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/teacherLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_registration_background_white"
+            android:layout_marginLeft="@dimen/margin_5dp">
+
+            <ImageView
+                android:id="@+id/teacherIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:src="@drawable/user_black_icon"
+                android:gravity="center"
+                android:contentDescription="Teacher"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/teacherText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Teacher"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/light_gray"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/parentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_registration_background_white"
+            android:layout_marginLeft="@dimen/margin_5dp">
+
+            <ImageView
+                android:id="@+id/parentIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:src="@drawable/user_black_icon"
+                android:gravity="center"
+                android:contentDescription="Parent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/parentText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/light_gray"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/studentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_registration_background_white"
+            android:layout_marginLeft="@dimen/margin_5dp">
+
+            <ImageView
+                android:id="@+id/studentIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:src="@drawable/user_black_icon"
+                android:gravity="center"
+                android:contentDescription="Student"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/studentText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Student"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/light_gray"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

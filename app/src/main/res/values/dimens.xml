@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_margin_left_right">16dp</dimen>
+
+    <!--Registration-->
+    <dimen name="get_started_button_margin_bottom">50dp</dimen>
+    <dimen name="registration_margin_top">20dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+
+
+    <!-- Login -->
+    <dimen name="login_margin_top">40dp</dimen>
+    <dimen name="forgot_password_text">15sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="margin_4dp">4dp</dimen>
+    <dimen name="margin_12dp">12dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="card_width_height">100dp</dimen>
+    <!--School admin flow-->
+    <dimen name="school_admin_img_height">160dp</dimen>
+    <dimen name="school_admin_margin_top">16dp</dimen>
+    <dimen name="school_admin_card_image_width_height">130dp</dimen>
+    <dimen name="card_option_menu_width">10dp</dimen>
+    <dimen name="school_admin_floating_margin_top">140dp</dimen>
+    <dimen name="school_admin_floating_margin_right">16dp</dimen>
+    <dimen name="school_admin_recycler_margin_top">32dp</dimen>
+    <dimen name="school_list_item_margin">5dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="toolbar_height">48dp</dimen>
+    <dimen name="margin_30dp">30dp</dimen>
+    <dimen name="add_school_item_margin">8dp</dimen>
+    <dimen name="add_fees_close_padding">10dp</dimen>
+    <dimen name="add_fees_add_submit_margin_bottom">10dp</dimen>
+    <dimen name="school_edit_activity_margin">16dp</dimen>
+    <dimen name="school_edit_activity_text_size">16sp</dimen>
+    <dimen name="school_edit_activity_item_top_margin">8dp</dimen>
+    <dimen name="select_school_fragement_height">300dp</dimen>
+    <dimen name="select_school_fragement_width">100dp</dimen>
+
+
+    <dimen name="margin_5dp">5dp</dimen>
+
+    <!--news-->
+
+    <dimen name="news_image_dimen">48dp</dimen>
+    <dimen name="news_list_item_margin">8dp</dimen>
+    <dimen name="news_menu_dimens">32dp</dimen>
+    <dimen name="news_list_item_top_margin">4dp</dimen>
+    <dimen name="news_item_elevation">4dp</dimen>
+    <dimen name="role_icon_height_width">100dp</dimen>
+
+    <dimen name="v40dp">40dp</dimen>
+    <dimen name="v250dp">250dp</dimen>
+    <dimen name="v90dp">90dp</dimen>
+    <dimen name="v5dp">5dp</dimen>
+    <dimen name="v15dp">15dp</dimen>
+    <dimen name="v25sp">25sp</dimen>
+    <dimen name="v18sp">18sp</dimen>
+    <dimen name="v2dp">2dp</dimen>
+    <dimen name="v300dp">300dp</dimen>
+    <dimen name="v30dp">30dp</dimen>
+    <dimen name="v70dp">70dp</dimen>
+    <dimen name="v20sp">20sp</dimen>
+    <dimen name="v50dp">50dp</dimen>
+    <dimen name="v3dp">3dp</dimen>
+    <dimen name="v4dp">4dp</dimen>
+    <dimen name="v180dp">180dp</dimen>
+    <dimen name="v15sp">15sp</dimen>
+    <dimen name="v120dp">120dp</dimen>
+    <dimen name="v150dp">150dp</dimen>
+    <dimen name="v60dp">60dp</dimen>
+    <dimen name="v80dp">80dp</dimen>
+    <dimen name="v48dp">48dp</dimen>
+    <dimen name="v200dp">200dp</dimen>
+    <dimen name="v8dp">8dp</dimen>
+    <dimen name="v230dp">230dp</dimen>
+    <dimen name="v30sp">30sp</dimen>
+    <dimen name="v22sp">22sp</dimen>
+    <dimen name="v400dp">400dp</dimen>
+    <dimen name="v130dp">130dp</dimen>
+    <dimen name="v350dp">350dp</dimen>
+
+</resources>

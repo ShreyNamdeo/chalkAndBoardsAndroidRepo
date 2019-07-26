@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/app_margin_left_right"
+    android:orientation="vertical"
+    android:background="@color/header_content_bg"
+    android:layout_marginBottom="@dimen/app_margin_left_right"
+    android:layout_marginRight="@dimen/app_margin_left_right"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:id="@+id/ll_institute_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_institute_label"
+            android:text="Institute"
+            style="@style/T1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_institute_value"
+            android:layout_below="@id/tv_institute_label"
+            tools:text = "St Joseph's"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_start_date_label"
+            android:text="Start Date"
+            style="@style/T1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_start_date_value"
+            android:layout_below="@id/tv_start_date_label"
+            tools:text = "12/01/19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_end_date_label"
+            android:text="End Date"
+            style="@style/T1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_end_date_value"
+            android:layout_below="@id/tv_end_date_label"
+            tools:text = "12/01/19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_designation_container"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/app_margin_left_right"
+        android:layout_below="@id/ll_institute_container"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_designation_label"
+                android:text="Designation"
+                style="@style/T1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_designation_value"
+                android:layout_below="@id/tv_designation_label"
+                tools:text = "Senior Teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_subject_label"
+                android:text="Subject"
+                style="@style/T1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_subject_value"
+                android:layout_below="@id/tv_subject_label"
+                tools:text = "Maths"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

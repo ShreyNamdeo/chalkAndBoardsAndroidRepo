@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".teacherStory.classes.ClassActivity"
+    android:id="@+id/main_view">
+
+    <ImageView
+        android:id="@+id/header_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v180dp"
+        android:background="@color/appGreenColor"
+        android:src="@drawable/header_vector" />
+
+    <ListView
+        android:id="@+id/class_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_img"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:divider="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/inst_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/v25sp"
+        android:text="Please select your institution first!"
+        android:layout_margin="@dimen/margin_5dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+</RelativeLayout>

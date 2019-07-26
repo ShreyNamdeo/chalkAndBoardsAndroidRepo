@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".teacherStory.classes.ClassActivity">
+
+    <ImageView
+        android:id="@+id/header_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v180dp"
+        android:background="@color/appGreenColor"
+        android:src="@drawable/header_vector"/>
+
+    <ImageView
+        android:id="@+id/add_class"
+        android:layout_width="@dimen/v70dp"
+        android:layout_height="@dimen/v70dp"
+        android:src="@drawable/plus_icon"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/header_img"
+        android:layout_marginTop="-40dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:elevation="@dimen/margin_5dp"/>
+
+    <ListView
+        android:id="@+id/class_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_img"
+        android:layout_marginTop="@dimen/margin_10dp"/>
+
+</RelativeLayout>

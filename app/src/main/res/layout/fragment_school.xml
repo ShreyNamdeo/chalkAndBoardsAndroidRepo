@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:id="@+id/main_view"
+    tools:context=".studentStory.schools.schoolFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/v48dp"
+            android:background="@drawable/roundcorner_rectangle"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:elevation="@dimen/margin_5dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/v30dp"
+                android:layout_height="@dimen/v30dp"
+                android:src="@drawable/search_icon"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_10dp"/>
+
+            <EditText
+                android:id="@+id/searchEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Search School"
+                android:padding="@dimen/margin_10dp"
+                android:maxLines="1"
+                android:inputType="text"
+                android:imeOptions="actionDone"/>
+
+
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/schoolList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/transparent"
+            android:layout_marginTop="@dimen/margin_5dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/searchSchool"
+        android:layout_width="@dimen/v70dp"
+        android:layout_height="@dimen/v70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/v15dp"
+        android:background="@drawable/circle"
+        android:clickable="true"
+        android:elevation="@dimen/margin_5dp"
+        android:padding="@dimen/v15dp"
+        android:src="@drawable/search_icon" />
+
+
+</RelativeLayout>

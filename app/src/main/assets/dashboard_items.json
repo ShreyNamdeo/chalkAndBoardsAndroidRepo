@@ -1,0 +1,200 @@
+[
+  {
+    "role": "student",
+    "tile1" : "",
+    "title2" : "You have not invited any parents.\nPlease invite them now",
+    "button_text" : "INVITE PARENTS",
+
+    "items": [
+      {
+        "name": "Schools",
+        "local image": "img_school"
+      },
+      {
+        "name": "Classes",
+        "local image": "img_class"
+      },
+      {
+        "name": "Attendance",
+        "local image": "img_attendance"
+      },
+      {
+        "name": "Assignments",
+        "local image": "img_assignment"
+      },
+      {
+        "name": "Class News",
+        "local image": "img_class_room"
+      },
+      {
+        "name": "Class Agenda",
+        "local image": "img_class_agenda"
+      },
+      {
+        "name": "Reports",
+        "local image": "img_reports"
+      },
+      {
+        "name": "Tests",
+        "local image": "img_tests"
+      },
+      {
+        "name": "Topics",
+        "local image": "img_topics"
+      }
+    ]
+  },
+  {
+    "role": "teacher",
+    "tile1" : "",
+    "title2" : "You have not invited any parents.\nPlease invite them now",
+    "button_text" : "INVITE PARENTS",
+    "items": [
+      {
+        "name": "Schools",
+        "local image": "img_school"
+      },
+      {
+        "name": "Classes",
+        "local image": "img_class"
+      },
+      {
+        "name": "Requests",
+        "local image": "img_student_request"
+      },
+      {
+        "name": "School News",
+        "local image": "img_school_news"
+      },
+      {
+        "name": "Class News",
+        "local image": "img_class_room"
+      },
+      {
+        "name": "Class Agenda",
+        "local image": "img_class_agenda"
+      },
+      {
+        "name": "Class Timings",
+        "local image": "img_class_timings"
+      },
+      {
+        "name": "Attendance",
+        "local image": "img_attendance"
+      },
+      {
+        "name": "Assignment",
+        "local image": "img_assignment"
+      },
+      {
+        "name": "Reports",
+        "local image": "img_reports"
+      },
+      {
+        "name": "Tests",
+        "local image": "img_tests"
+      },
+      {
+        "name": "topics",
+        "local image": "img_topics"
+      }
+    ]
+  },
+  {
+    "role": "Admin",
+    "tile1" : "Online school fee payment",
+    "title2" : "Enable school fee payment \nto receive fee online from parents",
+    "button_text" : "ENABLE NOW",
+    "items": [
+      {
+        "name": "School",
+        "local image": "img_school"
+      },
+      {
+        "name": "Teacher request",
+        "local image": "img_teachers"
+      },
+      {
+        "name": "News",
+        "local image": "img_news"
+      }
+    ]
+  },
+//  {
+//    "role": "parent",
+//    "tile1" : "Online school fee payment",
+//    "title2" : "Enable school fee payment \nto receive fee online from parents",
+//    "button_text" : "ENABLE NOW",
+//    "items": [
+//      {
+//        "name": "Schools",
+//        "local image": "img_school"
+//      },
+//      {
+//        "name": "Teachers",
+//        "local image": "img_teachers"
+//      },
+//      {
+//        "name": "News",
+//        "local image": "img_news"
+//      },
+//      {
+//        "name": "Fees",
+//        "local image": "img_fees"
+//      },
+//      {
+//        "name": "Attendance",
+//        "local image": "img_attendance"
+//      },
+//      {
+//        "name": "Time Table",
+//        "local image": "img_time_table"
+//      }
+//    ]
+//  }
+  {
+    "role": "parent",
+    "tile1" : "Online school fee payment",
+    "title2" : "Enable school fee payment \nto receive fee online from parents",
+    "button_text" : "ENABLE NOW",
+
+    "items": [
+      {
+        "name": "Schools",
+        "local image": "img_school"
+      },
+      {
+        "name": "Classes",
+        "local image": "img_class"
+      },
+      {
+        "name": "Attendance",
+        "local image": "img_attendance"
+      },
+      {
+        "name": "Assignments",
+        "local image": "img_assignment"
+      },
+      {
+        "name": "Class News",
+        "local image": "img_class_room"
+      },
+      {
+        "name": "Class Agenda",
+        "local image": "img_class_agenda"
+      },
+      {
+        "name": "Reports",
+        "local image": "img_reports"
+      },
+      {
+        "name": "Tests",
+        "local image": "img_tests"
+      },
+      {
+        "name": "Topics",
+        "local image": "img_topics"
+      }
+    ]
+  }
+]

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".login.view.loginFragment_1"
+    android:id="@+id/main_view">
+
+    <RelativeLayout
+        android:id="@+id/rl_login_fields"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_below="@id/tv_welcome"
+        android:layout_marginTop="@dimen/registration_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_email_phone_number"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/registration_margin_top"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_email_phone_number"
+                android:hint="@string/email_number_hint_text"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/select_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Role"
+            android:textSize="@dimen/v20sp"
+            android:layout_below="@id/til_email_phone_number"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/v150dp"
+            android:padding="@dimen/v2dp"
+            android:layout_below="@id/select_role"
+            android:id="@+id/role_layout"
+            android:layout_marginTop="@dimen/margin_10dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/v120dp"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/v2dp"
+                app:cardCornerRadius="@dimen/v2dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <LinearLayout
+                    android:id="@+id/admin_role"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@drawable/role_selector"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="@dimen/v60dp"
+                        android:layout_height="@dimen/v60dp"
+                        android:src="@drawable/admin"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admin"
+                        android:layout_marginTop="@dimen/margin_10dp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/v120dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/v2dp"
+                android:layout_marginRight="@dimen/v2dp"
+                app:cardCornerRadius="@dimen/v2dp">
+
+                <LinearLayout
+                    android:id="@+id/teacher_role"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@drawable/role_selector"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="@dimen/v60dp"
+                        android:layout_height="@dimen/v60dp"
+                        android:src="@drawable/teacher_role"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Teacher"
+                        android:layout_marginTop="@dimen/margin_10dp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/v120dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/v2dp"
+                android:layout_marginRight="@dimen/v2dp"
+                app:cardCornerRadius="@dimen/v2dp">
+
+                <LinearLayout
+                    android:id="@+id/student_role"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@drawable/role_selector"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="@dimen/v50dp"
+                        android:layout_height="@dimen/v50dp"
+                        android:src="@drawable/student_role"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Student"
+                        android:layout_marginTop="@dimen/margin_10dp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/v120dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/v2dp"
+                app:cardCornerRadius="@dimen/v2dp">
+
+                <LinearLayout
+                    android:id="@+id/parent_role"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@drawable/role_selector"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="@dimen/v60dp"
+                        android:layout_height="@dimen/v60dp"
+                        android:src="@drawable/parent"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Parent"
+                        android:layout_marginTop="@dimen/margin_10dp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+        <com.android.chalkboard.util.PNButton
+            android:id="@+id/btn_login"
+            android:layout_below="@id/role_layout"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_width="match_parent"
+            style="@style/WIDE_BUTTON"
+            app:isPositive="true"
+            android:text="@string/login_btn"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:gravity="center"
+            android:layout_below="@id/btn_login">
+
+            <TextView
+                android:id="@+id/tv_dont_have_accnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/don_t_have_an_account" />
+
+            <TextView
+                android:id="@+id/tv_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_dont_have_accnt"
+                android:paddingLeft="4dp"
+                android:text="@string/sign_up"
+                android:textColor="@color/appGreenColor" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".teacherStory.classes.ClassActivity"
+    android:id="@+id/main_view">
+
+
+    <ImageView
+        android:id="@+id/header_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v180dp"
+        android:background="@color/appGreenColor"
+        android:padding="@dimen/margin_5dp"
+        android:src="@drawable/header_vector_attendance" />
+
+    <LinearLayout
+        android:id="@+id/dateHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:padding="@dimen/margin_5dp"
+        android:layout_below="@id/header_img"
+        android:background="@color/themeGreen">
+
+        <EditText
+            android:id="@+id/startDate"
+            android:layout_width="@dimen/v80dp"
+            android:layout_height="@dimen/v40dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundcorner_rectangle2"
+            android:layout_margin="@dimen/margin_5dp"
+            android:hint="Enter Start Date"
+            android:gravity="center"
+            android:focusable="false"
+            android:elevation="@dimen/margin_5dp"/>
+
+
+        <EditText
+            android:id="@+id/endDate"
+            android:layout_width="@dimen/v80dp"
+            android:layout_height="@dimen/v40dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/margin_5dp"
+            android:background="@drawable/roundcorner_rectangle2"
+            android:hint="Enter End Date"
+            android:gravity="center"
+            android:focusable="false"
+            android:layout_below="@id/header_img"
+            android:elevation="@dimen/margin_5dp"/>
+
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/attendance_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/dateHeader"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:divider="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/date_select"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Select dates!"
+        android:layout_below="@id/dateHeader"
+        android:textSize="@dimen/v25sp"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+</RelativeLayout>

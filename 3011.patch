@@ -1,0 +1,440 @@
+Index: app/src/main/java/com/android/chalkboard/network/NetworkListener.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/android/chalkboard/network/NetworkListener.java	(date 1543556802000)
++++ app/src/main/java/com/android/chalkboard/network/NetworkListener.java	(date 1543556802000)
+@@ -0,0 +1,7 @@
++package com.android.chalkboard.network;
++
++public interface NetworkListener {
++
++    void onSuccess(Object success);
++    void onFailure(String errorMessage);
++}
+Index: app/src/main/java/com/android/chalkboard/register/model/Image.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/android/chalkboard/register/model/Image.java	(date 1543556802000)
++++ app/src/main/java/com/android/chalkboard/register/model/Image.java	(date 1543556802000)
+@@ -0,0 +1,45 @@
++package com.android.chalkboard.register.model;
++
++import com.google.gson.annotations.Expose;
++import com.google.gson.annotations.SerializedName;
++
++import java.io.Serializable;
++
++public class Image implements Serializable {
++
++    @SerializedName("s3_key")
++    @Expose
++    private String s3Key;
++    @SerializedName("readUrl")
++    @Expose
++    private String readUrl;
++    @SerializedName("writeUrl")
++    @Expose
++    private String writeUrl;
++    private final static long serialVersionUID = -3463455196575362126L;
++
++    public String getS3Key() {
++        return s3Key;
++    }
++
++    public void setS3Key(String s3Key) {
++        this.s3Key = s3Key;
++    }
++
++    public String getReadUrl() {
++        return readUrl;
++    }
++
++    public void setReadUrl(String readUrl) {
++        this.readUrl = readUrl;
++    }
++
++    public String getWriteUrl() {
++        return writeUrl;
++    }
++
++    public void setWriteUrl(String writeUrl) {
++        this.writeUrl = writeUrl;
++    }
++
++}
+Index: app/src/main/java/com/android/chalkboard/register/model/User.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/android/chalkboard/register/model/User.java	(date 1543556802000)
++++ app/src/main/java/com/android/chalkboard/register/model/User.java	(date 1543556802000)
+@@ -0,0 +1,64 @@
++package com.android.chalkboard.register.model;
++
++public class User {
++    private String name;
++    private String mobileNumber;
++    private String email;
++    private String role;
++    private String dateOfBirth;
++
++    private String password;
++
++
++    // Getter Methods
++
++    public String getName() {
++        return name;
++    }
++
++    public String getMobileNumber() {
++        return mobileNumber;
++    }
++
++    public String getEmail() {
++        return email;
++    }
++
++    public String getRole() {
++        return role;
++    }
++
++    public String getDateOfBirth() {
++        return dateOfBirth;
++    }
++
++    // Setter Methods
++
++    public void setName(String name) {
++        this.name = name;
++    }
++
++    public void setMobileNumber(String mobileNumber) {
++        this.mobileNumber = mobileNumber;
++    }
++
++    public void setEmail(String email) {
++        this.email = email;
++    }
++
++    public void setRole(String role) {
++        this.role = role;
++    }
++
++    public void setDateOfBirth(String dateOfBirth) {
++        this.dateOfBirth = dateOfBirth;
++    }
++
++    public String getPassword() {
++        return password;
++    }
++
++    public void setPassword(String password) {
++        this.password = password;
++    }
++}
+Index: app/src/main/java/com/android/chalkboard/register/model/UserResponse.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/android/chalkboard/register/model/UserResponse.java	(date 1543556802000)
++++ app/src/main/java/com/android/chalkboard/register/model/UserResponse.java	(date 1543556802000)
+@@ -0,0 +1,168 @@
++package com.android.chalkboard.register.model;
++
++import java.io.Serializable;
++import com.google.gson.annotations.Expose;
++import com.google.gson.annotations.SerializedName;
++
++    public class UserResponse implements Serializable
++    {
++        private final static long serialVersionUID = -135089465080332810L;
++
++
++        @SerializedName("id")
++        @Expose
++        private int id;
++        @SerializedName("name")
++        @Expose
++        private String name;
++        @SerializedName("mobileNumber")
++        @Expose
++        private String mobileNumber;
++        @SerializedName("email")
++        @Expose
++        private String email;
++        @SerializedName("otp")
++        @Expose
++        private String otp;
++        @SerializedName("activated")
++        @Expose
++        private boolean activated;
++        @SerializedName("metaData")
++        @Expose
++        private Object metaData;
++        @SerializedName("androidNotificationId")
++        @Expose
++        private Object androidNotificationId;
++        @SerializedName("appleNotificationId")
++        @Expose
++        private Object appleNotificationId;
++        @SerializedName("userRole")
++        @Expose
++        private UserRole userRole;
++        @SerializedName("dateOfBirth")
++        @Expose
++        private int dateOfBirth;
++        @SerializedName("s3Key")
++        @Expose
++        private Object s3Key;
++        @SerializedName("dateOfBirthFormattedStr")
++        @Expose
++        private String dateOfBirthFormattedStr;
++        @SerializedName("image")
++        @Expose
++        private Image image;
++
++        public int getId() {
++            return id;
++        }
++
++        public void setId(int id) {
++            this.id = id;
++        }
++
++        public String getName() {
++            return name;
++        }
++
++        public void setName(String name) {
++            this.name = name;
++        }
++
++        public String getMobileNumber() {
++            return mobileNumber;
++        }
++
++        public void setMobileNumber(String mobileNumber) {
++            this.mobileNumber = mobileNumber;
++        }
++
++        public String getEmail() {
++            return email;
++        }
++
++        public void setEmail(String email) {
++            this.email = email;
++        }
++
++        public String getOtp() {
++            return otp;
++        }
++
++        public void setOtp(String otp) {
++            this.otp = otp;
++        }
++
++        public boolean isActivated() {
++            return activated;
++        }
++
++        public void setActivated(boolean activated) {
++            this.activated = activated;
++        }
++
++        public Object getMetaData() {
++            return metaData;
++        }
++
++        public void setMetaData(Object metaData) {
++            this.metaData = metaData;
++        }
++
++        public Object getAndroidNotificationId() {
++            return androidNotificationId;
++        }
++
++        public void setAndroidNotificationId(Object androidNotificationId) {
++            this.androidNotificationId = androidNotificationId;
++        }
++
++        public Object getAppleNotificationId() {
++            return appleNotificationId;
++        }
++
++        public void setAppleNotificationId(Object appleNotificationId) {
++            this.appleNotificationId = appleNotificationId;
++        }
++
++        public UserRole getUserRole() {
++            return userRole;
++        }
++
++        public void setUserRole(UserRole userRole) {
++            this.userRole = userRole;
++        }
++
++        public int getDateOfBirth() {
++            return dateOfBirth;
++        }
++
++        public void setDateOfBirth(int dateOfBirth) {
++            this.dateOfBirth = dateOfBirth;
++        }
++
++        public Object getS3Key() {
++            return s3Key;
++        }
++
++        public void setS3Key(Object s3Key) {
++            this.s3Key = s3Key;
++        }
++
++        public String getDateOfBirthFormattedStr() {
++            return dateOfBirthFormattedStr;
++        }
++
++        public void setDateOfBirthFormattedStr(String dateOfBirthFormattedStr) {
++            this.dateOfBirthFormattedStr = dateOfBirthFormattedStr;
++        }
++
++        public Image getImage() {
++            return image;
++        }
++
++        public void setImage(Image image) {
++            this.image = image;
++        }
++
++    }
++
+Index: app/src/main/java/com/android/chalkboard/register/model/UserRole.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/android/chalkboard/register/model/UserRole.java	(date 1543556802000)
++++ app/src/main/java/com/android/chalkboard/register/model/UserRole.java	(date 1543556802000)
+@@ -0,0 +1,24 @@
++package com.android.chalkboard.register.model;
++
++import com.google.gson.annotations.Expose;
++import com.google.gson.annotations.SerializedName;
++
++import java.io.Serializable;
++
++public class UserRole implements Serializable
++{
++
++    @SerializedName("id")
++    @Expose
++    private String id;
++    private final static long serialVersionUID = -7467051697835593306L;
++
++    public String getId() {
++        return id;
++    }
++
++    public void setId(String id) {
++        this.id = id;
++    }
++
++}
+Index: app/src/main/java/com/android/chalkboard/register/presenter/RegistrationContract.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/android/chalkboard/register/presenter/RegistrationContract.java	(date 1543556802000)
++++ app/src/main/java/com/android/chalkboard/register/presenter/RegistrationContract.java	(date 1543556802000)
+@@ -0,0 +1,17 @@
++package com.android.chalkboard.register.presenter;
++
++import com.android.chalkboard.register.model.User;
++
++public class RegistrationContract {
++
++    public interface RegistrationPresenter {
++        void registerUser(User userData);
++    }
++
++    public interface View {
++        void showSpinner();
++        void hideSpinner();
++        void showOTPView();
++        void showError(String errorMessage);
++    }
++}
+Index: app/src/main/java/com/android/chalkboard/register/presenter/RegistrationPresenterImpl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/android/chalkboard/register/presenter/RegistrationPresenterImpl.java	(date 1543556802000)
++++ app/src/main/java/com/android/chalkboard/register/presenter/RegistrationPresenterImpl.java	(date 1543556802000)
+@@ -0,0 +1,36 @@
++package com.android.chalkboard.register.presenter;
++
++import com.android.chalkboard.register.interactor.RegistrationInteractor;
++import com.android.chalkboard.network.NetworkListener;
++import com.android.chalkboard.register.model.User;
++
++public class RegistrationPresenterImpl implements com.android.chalkboard.register.presenter.RegistrationContract.RegistrationPresenter {
++
++    private RegistrationContract.View view;
++    private RegistrationInteractor mInteractor;
++
++    public RegistrationPresenterImpl(RegistrationContract.View view, RegistrationInteractor interactor){
++                this.view = view;
++                mInteractor = interactor;
++    }
++
++    @Override
++    public void registerUser(User userData) {
++        view.showSpinner();
++        mInteractor.createRegisterCall(userData, new NetworkListener() {
++            @Override
++            public void onSuccess(Object success) {
++                view.hideSpinner();
++                view.showOTPView();
++            }
++
++            @Override
++            public void onFailure(String errorMessage) {
++                //Handle service error
++                view.hideSpinner();
++                view.showError(errorMessage);
++
++            }
++        });
++    }
++}
+Index: app/src/main/java/com/android/chalkboard/register/service/RegisterServiceInterface.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/android/chalkboard/register/service/RegisterServiceInterface.java	(date 1543556802000)
++++ app/src/main/java/com/android/chalkboard/register/service/RegisterServiceInterface.java	(date 1543556802000)
+@@ -0,0 +1,15 @@
++package com.android.chalkboard.register.service;
++
++import com.android.chalkboard.register.model.User;
++
++import retrofit2.Call;
++import retrofit2.http.Body;
++import retrofit2.http.POST;
++import retrofit2.http.PUT;
++
++public interface RegisterServiceInterface {
++
++
++    @PUT("/users")
++    Call<User> registerUser(@Body User user);
++}

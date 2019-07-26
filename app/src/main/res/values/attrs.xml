@@ -1,0 +1,27 @@
+<resources>
+    <declare-styleable name="PNButton">
+    <attr name="isPositive" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TimeTable">
+        <attr name = "setHeaderWidth" format="integer"/>
+        <attr name="setHeaderHeight" format="integer"/>
+        <attr name="setFirstColumnWidth" format="integer"/>
+        <attr name="setFirstColumnHeight" format="integer"/>
+        <attr name="setDataCellWidth" format="integer"/>
+        <attr name="setDataCellHeight" format="integer"/>
+        <attr name="setHeaderTextColor" format="integer"/>
+        <attr name="setHeaderTextStyle" format="integer"/>
+        <attr name="setFirstColumnTextColor" format="integer"/>
+        <attr name="setFirstColumnTextStyle" format="integer"/>
+        <attr name="setDataCellTextColor" format="integer"/>
+        <attr name="setDataCellTextStyle" format="integer"/>
+        <attr name="setSelectedBackgroundColor" format="integer"/>
+        <attr name="setCellBorderColor" format="integer"/>
+        <attr name="setTodayDateTextColor" format="integer"/>
+        <attr name="setTodayColumnColor" format="integer"/>
+        <attr name="setWeekendColor" format="integer"/>
+        <attr name="setDataCellBackgroundColor" format="integer"/>
+
+    </declare-styleable>
+</resources>

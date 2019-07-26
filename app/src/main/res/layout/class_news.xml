@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".teacherStory.classes.ClassActivity"
+    android:clickable="true"
+    android:id="@+id/news_main"
+    android:background="@color/light_gray">
+
+    <ImageView
+        android:id="@+id/header_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v150dp"
+        android:background="@color/appGreenColor"
+        android:padding="@dimen/margin_10dp"
+        android:src="@drawable/news_header" />
+
+    <LinearLayout
+        android:id="@+id/news_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_img"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:padding="@dimen/margin_5dp">
+
+        <TextView
+            android:id="@+id/class_level"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="@dimen/v40dp"
+            android:text="Class"
+            android:textSize="@dimen/v25sp"
+            android:textStyle="bold"
+            android:textColor="@color/appWhite"
+            android:background="@drawable/roundcorner_rectangle2"
+            android:backgroundTint="@color/themeGreen"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_marginBottom="@dimen/margin_5dp"
+            android:gravity="center"
+            android:elevation="@dimen/margin_5dp"/>
+
+        <TextView
+            android:id="@+id/institute_level"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="@dimen/v40dp"
+            android:text="Institute"
+            android:textSize="@dimen/v25sp"
+            android:textStyle="bold"
+            android:textColor="@color/themeGreen"
+            android:background="@drawable/roundcorner_rectangle2"
+            android:backgroundTint="@color/appWhite"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:gravity="center"
+            android:elevation="@dimen/margin_5dp"
+            android:layout_marginBottom="@dimen/margin_5dp"/>
+
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/news_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/news_header"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="@dimen/margin_5dp"/>
+
+</RelativeLayout>
